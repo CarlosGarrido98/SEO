@@ -1,0 +1,230 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background-color: #f5f7f6;
+  color: #333;
+}
+
+/*
+header {
+  background: #2e7d32;
+  color: #fff;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+*/
+
+
+/**/
+
+header {
+  background: linear-gradient(135deg, #2e7d32, #1b5e20);
+  color: #fff;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+header h1 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 0.8rem;
+  color: white;
+  
+}
+
+/**/
+nav {
+  background: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0.3rem;
+}
+
+nav ul li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #2e7d32;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  background: #2e7d32;
+  color: #fff;
+}
+
+/**/
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+section {
+  margin-bottom: 3rem;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+h1, h2, h3 {
+  color:black
+}
+
+footer {
+  background: #1b5e20;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 1rem;
+ 
+}
+
+code {
+  background: #eee;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+}
+
+pre {
+  background: #f0f0f0;
+  padding: 1rem;
+  overflow-x: auto;
+  border-radius: 6px;
+}
+
+.js-container {
+  display: flex;
+  align-items: center; /* centra verticalmente la imagen con el texto */
+  justify-content: space-between;
+  gap: 2rem; /* espacio entre texto e imagen */
+}
+
+.js-text {
+  flex: 1; /* ocupa todo el espacio disponible */
+}
+
+.js-image {
+  flex: 0 0 120px; /* la imagen ocupa un ancho fijo */
+}
+
+.logo-js {
+  width: 100%;
+  height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+section {
+  display: none;
+}
+
+section.active {
+  display: block;
+}
+
+/* ===================== */
+/* 📱 DISEÑO PARA MÓVIL */
+/* ===================== */
+
+@media (max-width: 768px) {
+
+  header {
+    padding: 2rem 1rem;
+  }
+
+  header h1 {
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    line-height: 1.3;
+  }
+
+  header h2 {
+    font-size: 0.9rem;
+  }
+
+  nav ul {
+    justify-content: flex-start;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  nav ul li {
+    margin: 0.2rem;
+  }
+
+  nav ul li a {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  section {
+    padding: 1.3rem;
+    margin-bottom: 2rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+
+
+   nav ul {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  nav ul li {
+    margin: 0;
+  }
+
+  nav ul li a {
+    width: 90%;
+    text-align: center;
+    padding: 0.8rem;
+    border-radius: 0;
+    border-bottom: 1px solid rgba(46, 125, 50, 0.2);
+  }
+
+  nav ul li a:hover {
+    background: #2e7d32;
+    color: #fff;
+  }
+
+}
+

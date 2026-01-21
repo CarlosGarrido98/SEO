@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript, SEO y PWA | Carlos Garrido Ortega</title>
+  <meta name="description" content="Exposición web sobre JavaScript, SEO, PWA, rastreo, indexación, sitemaps y robots.txt aplicada a buenas prácticas web.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="js.ico" type="image/x-icon">
+</head>
+<body>
+
+<header>
+  <h1>JavaScript para SEO y Aplicaciones Web Progresivas (PWA)</h1>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#js">JavaScript</a></li>
+    <li><a href="#js-seo">JS y SEO</a></li>
+    <li><a href="#pwa">PWA</a></li>
+    <li><a href="#servidor">Servidor</a></li>
+    <li><a href="#rastreo">Rastreo</a></li>
+    <li><a href="#sitemap">Sitemaps</a></li>
+    <li><a href="#robots">Robots.txt</a></li>
+    <li><a href="#ejemplos">Ejemplos</a></li>
+    <li><a href="#bibliografia">Bibliografía</a></li>
+  </ul>
+</nav>
+
+<main>
+  <section id="js">
+  <div class="js-container">
+    <div class="js-text">
+      <h2>¿Qué es JavaScript?</h2>
+     <p>JavaScript es un lenguaje de programación web interpretado que se ejecuta directamente en el navegador, lo que permite crear sitios dinámicos y altamente interactivos. </p>
+     <p>Está basado en eventos y en la manipulación del DOM, lo que facilita la interacción con el usuario y la actualización de contenido en tiempo real sin necesidad de recargar la página.</p>
+      <p>Su uso se ha generalizado ampliamente en el desarrollo web moderno, siendo una de las tecnologías más utilizadas para implementar funcionalidades avanzadas, mejorar la experiencia del usuario y construir aplicaciones complejas que antes solo podían lograrse con software de escritorio.</p>
+
+    </div>
+        <div class="js-image">
+        <img src="jslogo.png" alt="Logo de JavaScript" class="logo-js">
+          </div>
+      </div>
+  </section>
+
+  <section id="js-seo">
+    <h2>JavaScript y SEO</h2>
+    <p>JavaScript influye directamente en el SEO, ya que puede afectar la velocidad de carga, el rastreo y la indexación del contenido.</p>
+    <p>Aunque Google puede indexar contenido generado con JavaScript, una mala implementación puede ralentizar el rastreo y retrasar la visibilidad en buscadores.</p>
+
+    <h3>Buenas prácticas</h3>
+    <ul>
+      <li><strong>Server-Side Rendering (SSR):</strong> el contenido se genera en el servidor antes de enviarlo al navegador.</li>
+      <li><strong>Pre-rendering:</strong> generación de HTML estático durante la fase de construcción.</li>
+      <li><strong>Dynamic Rendering:</strong> contenido distinto para usuarios y bots cuando el renderizado completo es complejo.</li>
+    </ul>
+  </section>
+
+  <section id="pwa">
+    <h2>Aplicaciones Web Progresivas (PWA)</h2>
+    <p>Una PWA es una web que utiliza tecnologías modernas para ofrecer una experiencia similar a una aplicación nativa, sin necesidad de instalarla desde una tienda.</p>
+
+    <h3>Ventajas principales</h3>
+    <ul>
+      <li>Alta velocidad de carga</li>
+      <li>Funcionamiento offline mediante Service Workers</li>
+      <li>Instalable en dispositivos</li>
+      <li>Menor consumo de datos</li>
+    </ul>
+
+    <h3>Relación con el SEO</h3>
+    <p>Las PWA mejoran los Core Web Vitals, son indexables mediante URL y ofrecen una mejor experiencia de usuario, lo que influye positivamente en el posicionamiento.</p>
+  </section>
+
+  <section id="servidor">
+    <h2>Configuración del Servidor</h2>
+    <p>Un servidor rápido y seguro es clave para el SEO. La velocidad de respuesta influye directamente en la experiencia del usuario y en los Core Web Vitals.</p>
+
+    <p>HTTPS garantiza la seguridad de la información transmitida entre el usuario y el servidor mediante cifrado, protegiendo datos sensibles y evitando que terceros puedan interceptarlos. Además, es un factor de posicionamiento confirmado por Google, lo que mejora la visibilidad de la web en los resultados de búsqueda. El uso de HTTPS también genera confianza en los usuarios y evita que los navegadores muestren advertencias de “sitio no seguro”.</p>
+
+    <h3>Aspectos clave</h3>
+    <ul>
+      <li>Uso de CDN y caché</li>
+      <li>Reducción del Time To First Byte (TTFB)</li>
+      <li>Uso de HTTPS como factor de posicionamiento</li>
+    </ul>
+  </section>
+
+  <section id="rastreo">
+    <h2>Rastreo e Indexación Web</h2>   
+
+    <h3>¿Qué es el rastreo?</h3>    
+    <p>El rastreo es el proceso mediante el cual los motores de búsqueda recorren la web siguiendo enlaces para descubrir contenido nuevo.</p>
+
+    <h3>¿Qué es la indexación?</h3>   
+    <p>La indexación es el paso posterior al rastreo: Google analiza y almacena el contenido de una página en su índice para poder mostrarla en los resultados de búsqueda.</p>
+
+  </section>
+
+  <section id="sitemap">
+    <h2>Sitemaps</h2>
+
+    <h3>¿Qué es un sitemap?</h3>
+    <p>Un sitemap es un archivo que lista las URLs importantes de un sitio web y ayuda a los motores de búsqueda a entender su estructura y encontrar el
+    contenido más fácilmente.</p>
+
+    <h3>¿Para que sirve?</h3>
+    <p>El sitemap facilita el rastreo e indexación de las páginas por parte de los motores de búsqueda, indicando qué URLs son más relevantes y ayudando a descubrir contenido nuevo o actualizado. Esto resulta especialmente útil en sitios grandes o con muchas páginas, donde el control manual del rastreo sería complicado.</p>
+
+    <h3>Tipos</h3>
+    <p>El sitemap XML es el más utilizado y puede incluir información adicional como la fecha de actualización o la prioridad de las URLs.</p>
+  </section>
+
+  <section id="robots">
+    <h2>Robots.txt</h2>
+
+    <h3>¿Qué es el archivo robots.txt?</h3>
+
+    <p>El archivo <code>robots.txt</code> indica a los motores de búsqueda qué partes del sitio pueden o no rastrear.</p>
+
+    <h3> ¿Para qué se usa?</h3>
+    <p>Permite controlar el rastreo de los bots, evitando que se indexen páginas innecesarias o privadas y optimizando el presupuesto de rastreo del sitio. Además, es útil para indicar la ubicación del sitemap, facilitando que los motores de búsqueda descubran y procesen correctamente todo el contenido relevante de la web.</p>
+
+
+    <pre>
+        User-agent: *
+        Allow: /
+        Crawl-delay: 10
+    </pre>
+  </section>
+
+  <section id="ejemplos">
+    <h2>Ejemplos Web</h2>
+    <ul>
+      <li><a href="https://www.apple.com/es/sitemap/" target="_blank">Apple - Sitemap</a></li>
+      <li><a href="https://www.nike.com/es/" target="_blank">Nike</a></li>
+      <li><a href="https://www.uber.com/es/es-es/" target="_blank">Uber (PWA)</a></li>
+    </ul>
+  </section>
+
+  <section id="bibliografia">
+    <h2>Bibliografía</h2>
+    <ul>
+      <li><a href="https://developer.mozilla.org/es/docs/Learn_web_development/Core/Scripting/What_is_JavaScript" target="_blank">MDN Web Docs</a></li>
+      <li><a href="https://bluegiftdigital.com/how-to-make-javascript-seo-friendly/" target="_blank">Blue Gift Digital</a></li>
+      <li><a href="https://www.alteredvisiondesigns.com/seo/how-to-optimize-javascript-for-seo-success/" target="_blank">Altered Vision Designs</a></li>
+    </ul>
+
+     <p style="margin-top:1rem; font-weight:bold;">Trabajo realizado por: Carlos Garrido Ortega</p>
+  </section>
+
+</main>
+
+
+
+
+<!--Script  JS para que el contenido aparezca  -->
+<script>
+  const enlaces = document.querySelectorAll("nav a");
+  const secciones = document.querySelectorAll("main section");
+
+  function mostrarSeccion(id) {
+    secciones.forEach(seccion => {
+      seccion.classList.remove("active");
+    });
+
+    const seccionActiva = document.querySelector(id);
+    if (seccionActiva) {
+      seccionActiva.classList.add("active");
+    }
+  }
+
+  enlaces.forEach(enlace => {
+    enlace.addEventListener("click", function (e) {
+      e.preventDefault(); // evita el salto brusco
+      const id = this.getAttribute("href");
+      mostrarSeccion(id);
+    });
+  });
+
+  // Mostrar la primera sección al cargar
+  mostrarSeccion("#js");
+</script>
+
+
+</body>
+</html>
